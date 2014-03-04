@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- CSS Styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- External Libraries -->
+        <script type="text/javascript" src="lib/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="lib/d3.v3.js"></script>
+
+        <!-- Demo Data -->
+        <script type="text/javascript" src="data/firstLevelFolders.js"></script>
+        <script type="text/javascript" src="data/folders.js"></script>
+
+        <!-- Own D3 Graphs -->
+        <script type="text/javascript" src="js/barchart.js"></script>
+
+        <!-- Basic Initialization of all graphs -->
+        <script type="text/javascript">
+        $(document).ready(function() {
+            barchart(
+                $("#barchart"),
+                { width: 800, height: 400 },
+                data.firstLevelFolders
+            );
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Each chart needs a container here -->
+        <div id="barchart"></div>
+
+        <!--
+             Used later on ;)
+        
+        <div id="piechart"></div>
+        <div id="donut"></div>
+        <div id="sunburst"></div>
+        -->
+    </body>
+</html>

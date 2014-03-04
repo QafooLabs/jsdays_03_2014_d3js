@@ -1,0 +1,41 @@
+/**
+ * Add your styles here
+ */
+div {
+    margin: 25px auto;
+}
+
+div svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.y.grid path {
+    display: none;
+}
+
+.y.grid line {
+    stroke: #777;
+    stroke-dasharray: 2,2;
+}
